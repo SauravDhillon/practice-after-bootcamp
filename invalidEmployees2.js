@@ -73,4 +73,11 @@ const invalidEmployees = (employees) => {
 //    return invalidEmployeesArr;
 // }
 
+// Extracting names of employees from employees array 
+const invalidEmployeeNames = (employees) => {
+    const invalidEmployeesList = invalidEmployees(employees);
+    const names = invalidEmployeesList.map(employee => employee.employee_name);
+    return names;
+}
 console.log(invalidEmployees(sampleEmployees));
+console.log(invalidEmployeeNames(sampleEmployees));
