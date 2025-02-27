@@ -1,3 +1,6 @@
+// Create a function called invalidEmployees to filter out 
+// employees having null value for a key 
+
 const sampleEmployees = [{
   "id": 1,
   "employee_name": "Milena",
