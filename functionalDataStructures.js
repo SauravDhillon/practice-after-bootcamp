@@ -9,3 +9,8 @@ console.log(filteredArray);
 const higherThanFifty = filteredArray.find((item) => item > 50);
 
 console.log(higherThanFifty);
+
+// Practicing .reduce() method
+const sumOfAllNumbers = filteredArray.reduce(((item, sum) => item + sum), 0);
+
+console.log(sumOfAllNumbers);
