@@ -16,7 +16,7 @@ function App() {
         Tourney Matches{" "}
         <span>Where Coding and Tournaments found their Match!</span>
       </h1>
-      <PlayerList playerData={parsedPlayerData} />
+      <PlayerList playerData={parsedPlayerData} matchData={matchData} />
       <MatchList matchData={matchData} />
     </div>
   );
