@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AngryButton() {
+function AngryButton(props) {
 
   const [anger, setAnger] = useState(0);
 
@@ -10,7 +10,7 @@ function AngryButton() {
     }else{
       setAnger(0);
     }
-    
+    props.increaseAnger(0.1);
   }
    return (
      <button className="AngryButton"
