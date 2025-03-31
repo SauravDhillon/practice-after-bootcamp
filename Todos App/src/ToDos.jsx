@@ -23,9 +23,9 @@ const ToDos = () => {
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent default form submission
     
-    const newTodoTextInput = event.target.querySelector('[type="text"]'); // Target input field
+    const newTodoTextInput = event.target.querySelector('[type="text"]'); // This represents the object input element in DOM node with type="text"
     if (newTodoTextInput) {
-      const newTodoText = newTodoTextInput.value.trim(); // Trim extra spaces
+      const newTodoText = newTodoTextInput.value.trim(); // This represents the actual text inside the input field
       if (newTodoText.length > maxChars) {
         alert('Too many characters.');
       } else if (newTodoText.length > 0) {
