@@ -19,7 +19,7 @@ app.get("/api/todos", (req, res) => {
   // create an array from the todoData object
   const data = Object.values(todoData);
 
-  res.json(data);
+  res.json(data); // convert data to JSON from server side
 });
 
 // DELETE /api/todos => delete the todo associated with the provided id
